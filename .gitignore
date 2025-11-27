@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data
+*.fits
+*.h5
+
+# Results
+results/
