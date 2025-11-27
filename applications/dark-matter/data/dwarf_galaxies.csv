@@ -1,0 +1,14 @@
+# Ultra-faint dwarf galaxies - kinematic data
+# Name,L_sun,sigma_km_s,r_half_pc,M_L_observed
+Segue1,340,3.9,29,3400
+UrsaMinor,290000,9.5,181,580
+Draco,260000,10.1,221,440
+Sculptor,2300000,9.2,283,160
+Fornax,15500000,11.7,710,20
+LeoII,740000,6.6,176,80
+Carina,430000,6.4,250,70
+Sextans,500000,7.9,695,90
+ReticulumII,2600,3.3,32,470
+TriangulumII,450,3.4,16,3600
+TucanaII,3000,8.6,165,1900
+HorologiumI,2500,4.9,30,600
