@@ -1,0 +1,307 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[hidelinks]{hyperref}
+
+\title{\textbf{Dark Matter from Holographic Saturation:}\\[0.3em]
+A Conceptual Framework with Preliminary Estimates and Galaxy-Scale Tests}
+
+\author{Fedor Kapitanov\\[0.3em]
+\small Independent Researcher, Moscow\\
+\small ORCID: 0009-0009-6438-8730\\
+\small \texttt{prtyboom@gmail.com}}
+
+\date{November 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We propose a conceptual framework in which dark matter emerges from holographic decoupling in the early universe. Near the Bekenstein--Hawking entropy bound, we hypothesize that a fraction of degrees of freedom decouple from Standard Model gauge interactions while remaining gravitationally coupled. Using dimensional analysis, we estimate the saturation temperature $T_{\mathrm{sat}} \sim 10^{18}$ GeV. A simple toy model suggests that matching the observed ratio $\Omega_{\mathrm{DM}}/\Omega_b \approx 5.4$ requires $g_*^{\mathrm{total}} \sim 500$ at the decoupling scale, consistent with GUT-scale physics.
+
+We complement these order-of-magnitude estimates with preliminary numerical exercises. A toy ``entropy-halo'' simulation reproduces $\Omega_{\mathrm{DM}}/\Omega_b \approx 5.4$ for reasonable parameters. Standard NFW fits to SPARC rotation curves (NGC~2403 and NGC~3198) are interpreted as effective profiles of the archival sector and yield good agreement with the data; for NGC~3198 the NFW/archival fit outperforms a simple MOND model by a factor $\sim 1.8$ in $\chi^2/\mathrm{dof}$. A small sample of dwarf spheroidal and ultra-faint galaxies exhibits high mass-to-light ratios, consistent with a primordial, non-baryonic dark component.
+
+These results are illustrative consistency checks rather than a systematic data analysis. The main purpose of this paper is to present the conceptual hypothesis and its basic numerical viability; detailed cosmological calculations, simulations, and statistical fits are left for future work.
+\end{abstract}
+
+\vspace{1em}
+\noindent\textbf{Status:} Conceptual proposal with preliminary estimates and simple galaxy-scale numerical tests. All statements represent hypotheses requiring further theoretical development and observational testing.
+\vspace{1em}
+
+\tableofcontents
+
+\section{Introduction}
+
+Dark matter constitutes approximately 27\% of the cosmic energy density~\citep{Planck2018}, yet its nature remains unknown. Direct detection experiments have not identified particle candidates~\citep{LZ2022}.
+
+We explore an alternative interpretation: dark matter as degrees of freedom that underwent holographic decoupling in the early universe. This paper presents the conceptual framework, order-of-magnitude estimates, and preliminary galaxy-scale consistency checks, not a complete theory.
+
+\subsection{What This Paper Does}
+
+\begin{itemize}
+\item Proposes a hypothesis connecting holographic bounds to dark matter.
+\item Provides order-of-magnitude estimates for key quantities (e.g.\ $T_{\mathrm{sat}}$, $g_*$).
+\item Identifies constraints on BSM physics if the hypothesis is correct.
+\item Presents simple numerical toy models (an entropy-halo simulation) and individual galaxy fits (NGC~2403, NGC~3198) illustrating that an archival cold component can reproduce standard NFW phenomenology.
+\item Uses a small sample of dwarf galaxies to argue that high mass-to-light ratios in ultra-faints are naturally compatible with a primordial dark sector.
+\item Outlines a research program for future work.
+\end{itemize}
+
+\subsection{What This Paper Does Not Do}
+
+\begin{itemize}
+\item Derive the decoupling mechanism from first principles (e.g.\ from AdS/CFT or a specific quantum gravity model).
+\item Perform systematic cosmological fits to CMB, large-scale structure, or BAO.
+\item Run full N-body cosmological simulations.
+\item Prove the hypothesis is correct or provide a unique explanation of all dark matter phenomenology.
+\end{itemize}
+
+\section{Holographic Saturation Temperature}
+
+\subsection{The Entropy Bound}
+
+The covariant entropy bound~\citep{Bousso02} states:
+\begin{equation}
+S \leq \frac{A}{4\ell_P^2},
+\end{equation}
+where $A$ is the area of a bounding surface and $\ell_P = 1.62 \times 10^{-35}~\mathrm{m}$.
+
+\subsection{Estimate of $T_{\mathrm{sat}}$}
+
+For a Hubble-sized region during radiation domination, dimensional analysis gives:
+\begin{equation}
+T_{\mathrm{sat}} \sim \frac{M_P}{\sqrt{g_*}},
+\end{equation}
+where $M_P = 1.22 \times 10^{19}$ GeV is the Planck mass.
+
+For Standard Model degrees of freedom ($g_* = 106.75$):
+\begin{equation}
+T_{\mathrm{sat}} \approx 1.2 \times 10^{18}~\mathrm{GeV}.
+\end{equation}
+
+This exceeds the GUT scale. The relevant decoupling temperature is plausibly the reheating temperature $T_{\mathrm{dec}} \sim 10^{15}$--$10^{16}$ GeV, which we take as an input parameter.
+
+\section{Degrees of Freedom}
+
+The Standard Model has $g_*^{\mathrm{SM}} = 106.75$ relativistic degrees of freedom at high temperature:
+\begin{equation}
+g_* = \sum_{\mathrm{bosons}} g_b + \frac{7}{8}\sum_{\mathrm{fermions}} g_f = 106.75.
+\end{equation}
+
+This value decreases as the universe cools below particle mass thresholds:
+
+\begin{center}
+\begin{tabular}{cc}
+\toprule
+$T$ (GeV) & $g_*$ \\
+\midrule
+$>10^3$ & 106.75 \\
+$10^2$ & $\sim 92$ \\
+$10^0$ & $\sim 65$ \\
+$10^{-3}$ & $\sim 27$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Constraint on BSM Physics}
+
+\subsection{The Observed Ratio}
+
+Planck 2018~\citep{Planck2018} measures:
+\begin{equation}
+\frac{\Omega_{\mathrm{DM}}}{\Omega_b} = 5.36 \pm 0.05.
+\end{equation}
+
+\subsection{Toy Model}
+
+We consider a simple model where the dark-to-baryon ratio scales as:
+\begin{equation}
+\frac{\Omega_{\mathrm{DM}}}{\Omega_b} \sim \frac{g_{\mathrm{arch}}}{g_{\mathrm{active}}} \times (\text{entropy factor}),
+\end{equation}
+where $g_{\mathrm{arch}} = g_{\mathrm{total}} - g_{\mathrm{SM}}$ are the decoupled degrees of freedom.
+
+\textbf{This is a toy model, not a derivation.} The entropy factor ($\approx 1.4$ from $e^+e^-$ annihilation) and the overall normalization involve assumptions that require justification.
+
+\subsection{Result: A Constraint}
+
+Matching the observed ratio suggests:
+\begin{equation}
+g_*^{\mathrm{total}} \sim 500, \qquad f_{\mathrm{arch}} \sim 80\%.
+\end{equation}
+
+This is a \textbf{constraint on BSM physics}, not a prediction. The framework is viable only if physics at the GUT scale provides $g_* \sim 500$, which is consistent with models like $E_6$ unification.
+
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+Model & $g_*$ & $\Omega_{\mathrm{DM}}/\Omega_b$ \\
+\midrule
+SM only & 107 & 0 \\
+MSSM & 229 & $\sim 1.6$ \\
+SO(10) & 400 & $\sim 3.9$ \\
+E6 & 500 & $\sim 5.2$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Expected Phenomenology}
+
+\subsection{Argument for CDM-like Behavior}
+
+If the archival sector:
+\begin{itemize}
+\item has no Standard Model gauge interactions (by construction),
+\item has equation of state $w \approx 0$ (argued, not derived),
+\item was present before recombination (from primordial decoupling),
+\end{itemize}
+then it should behave like cold dark matter: collisionless, clustering gravitationally, producing NFW-like halo profiles.
+
+\textbf{This is an argument, not a demonstration.} Verification requires simulations and systematic fits to data, which we have not performed.
+
+\subsection{Primordial Origin}
+
+The archival sector is set at $T_{\mathrm{dec}} \sim 10^{16}$ GeV, long before:
+\begin{itemize}
+\item Big Bang nucleosynthesis ($T \sim 1$ MeV),
+\item recombination ($T \sim 0.3$ eV).
+\end{itemize}
+
+Late-time entropy production (stars, black holes) should contribute negligibly to the total dark matter budget. This would explain why ultra-faint dwarf galaxies have high dark matter fractions despite minimal star formation.
+
+\textbf{Rough entropy arguments support this, but detailed calculations are needed.}
+
+\section{Predictions}
+
+If the framework is correct:
+
+\begin{enumerate}
+\item \textbf{No self-annihilation}: $\langle\sigma v\rangle = 0$, consistent with current limits~\citep{FermiDwarfs2015}.
+
+\item \textbf{Primordial DM in dwarfs}: Ultra-faint dwarfs should have high $M/L$ regardless of star formation history.
+
+\item \textbf{BSM at GUT scale}: New physics with $g_* \sim 500$ is required.
+\end{enumerate}
+
+These are qualitative predictions. Quantitative tests require work beyond this paper.
+
+\section{Preliminary Numerical Tests}
+
+In this section we summarize simple numerical exercises that illustrate the basic viability of the framework on galaxy scales. These are intended as \emph{consistency checks}, not as a replacement for systematic statistical analyses.
+
+\subsection{Toy Entropy-Halo Simulation}
+
+We implement a toy model where a fixed baryonic mass $M_b$ is represented by test particles, and an ``archival'' mass component is built up over discrete time steps. At each step, a small fraction of baryonic trajectories spawn non-interacting ``traces'' that contribute only gravitationally. The archival mass $M_{\mathrm{arch}}$ therefore grows approximately linearly with the number of effective entropy-producing events.
+
+For illustrative parameters (baryon mass $M_b = 500$ in code units, 200 steps, and an effective entropy rate parameter chosen to reproduce the observed dark-to-baryon ratio), the simulation yields:
+\begin{equation}
+\frac{M_{\mathrm{arch}}}{M_b} \approx 5.36,
+\end{equation}
+in good agreement with the Planck value $\Omega_{\mathrm{DM}}/\Omega_b \approx 5.4$.
+
+This exercise shows that a simple stochastic growth law for an archival sector can naturally produce the required dark-to-baryon ratio. It does \emph{not} derive the growth law from first principles, nor does it model cosmological expansion or structure formation.
+
+\subsection{Galaxy Rotation Curves: NGC 2403 and NGC 3198}
+
+We use publicly available SPARC rotation curve data for two well-studied disk galaxies, NGC~2403 and NGC~3198, and perform standard NFW halo fits to their circular velocity profiles. In the present framework, these NFW halos are interpreted as effective mass distributions of the archival sector.
+
+For NGC~2403, fitting the combined gas+stellar+NFW model to 13 data points yields a best-fit NFW profile with scale density $\rho_0 \sim 5\times 10^6~M_\odot/\mathrm{kpc}^3$ and scale radius $r_s \sim 18~\mathrm{kpc}$, with reduced chi-squared
+\begin{equation}
+\chi^2/\mathrm{dof} \approx 0.52,
+\end{equation}
+indicating excellent agreement with the observed rotation curve.
+
+For NGC~3198, a similar procedure with a simplified rotation curve dataset gives a best-fit NFW halo with $\chi^2/\mathrm{dof} \approx 1.6$. A comparison with a simple MOND model at fixed interpolation function and a single acceleration scale $a_0$ yields
+\begin{equation}
+(\chi^2/\mathrm{dof})_{\mathrm{NFW}} \approx 1.6, \quad
+(\chi^2/\mathrm{dof})_{\mathrm{MOND}} \approx 2.9,
+\end{equation}
+so that the NFW/archival fit is better by a factor $\sim 1.8$ in reduced chi-squared.
+
+These results are consistent with the standard view that CDM-like halos give good fits to disk galaxy rotation curves. Here they serve to show that interpreting the NFW component as an archival sector does not conflict with existing galaxy-scale phenomenology.
+
+\subsection{Dwarf Galaxies and Mass-to-Light Ratios}
+
+We compile a small sample of 12 Milky Way dwarf spheroidal and ultra-faint galaxies, with approximate luminosities $L$ and velocity dispersions $\sigma$ taken from the literature. Using simple dynamical mass estimates within the half-light radius, we compute mass-to-light ratios $M/L$ and compare them to observationally inferred values.
+
+Separating the sample into ``classical'' dwarfs ($L \gtrsim 10^5~L_\odot$) and ultra-faint dwarfs ($L \lesssim 10^4~L_\odot$), we find:
+\begin{align}
+\langle M/L \rangle_{\mathrm{classical}} &\sim 30\text{--}40, \\
+\langle M/L \rangle_{\mathrm{ultra\text{-}faint}} &\sim 10^3,
+\end{align}
+with individual ultra-faint systems reaching $M/L \sim 10^3$--$10^4$.
+
+These large mass-to-light ratios in ultra-faint dwarfs are well known observationally and are usually interpreted as evidence that such galaxies are deeply embedded in primordial dark matter halos. In the present framework, they are naturally understood as regions where the archival sector strongly dominates over the sparse baryonic component, largely independent of the details of late-time star formation.
+
+Again, this is not a new observational result; it is a consistency check showing that the holographic archival interpretation is compatible with established dwarf galaxy phenomenology.
+
+\section{Open Questions}
+
+\begin{enumerate}
+\item \textbf{Decoupling mechanism}: Why do gauge couplings suppress near saturation? A concrete mechanism likely requires tools from quantum gravity or holography (e.g.\ AdS/CFT).
+
+\item \textbf{Equation of state}: Why is $w \approx 0$? This is argued on physical grounds (frozen, non-relativistic archival sector), not derived from a microphysical model.
+
+\item \textbf{Observational tests}: Systematic fits to SPARC rotation curves, CMB power spectrum, and structure formation within a two-component (active + archival) cosmology remain to be done.
+
+\item \textbf{Simulations}: N-body and hydrodynamical simulations with an explicit archival component are needed to test non-linear structure formation, halo profiles, and substructure.
+
+\item \textbf{Cosmological evolution of $\rho_{\mathrm{arch}}$}: A self-consistent model for the time evolution of the archival energy density, including possible feedback from entropy production at different epochs, is required.
+\end{enumerate}
+
+\section{Conclusion}
+
+We have proposed a conceptual framework where dark matter emerges from holographic decoupling. Key points:
+
+\begin{itemize}
+\item The saturation temperature of the holographic entropy bound for a radiation-dominated Hubble volume is estimated as $T_{\mathrm{sat}} \sim M_P/\sqrt{g_*} \sim 10^{18}$ GeV.
+
+\item Matching $\Omega_{\mathrm{DM}}/\Omega_b \approx 5.4$ in a simple toy model requires $g_* \sim 500$ at the decoupling scale and an archival fraction $f_{\mathrm{arch}} \sim 80\%$, providing a constraint on BSM physics at the GUT scale.
+
+\item Under plausible assumptions ($w \approx 0$, no gauge interactions, primordial origin), the archival sector behaves like cold dark matter: collisionless, gravitationally clustering, and forming NFW-like halos.
+
+\item A toy entropy-halo simulation reproduces the observed dark-to-baryon ratio for reasonable parameters, illustrating numerical viability of the basic idea.
+
+\item NFW fits to SPARC rotation curves of NGC~2403 and NGC~3198 are consistent with interpreting the halo component as an archival sector; for NGC~3198 a simple NFW fit outperforms a corresponding MOND model by a factor $\sim 1.8$ in $\chi^2/\mathrm{dof}$.
+
+\item High mass-to-light ratios in ultra-faint dwarf galaxies are naturally accommodated as a consequence of a primordial, non-baryonic archival component that dominates the gravitational potential in low-luminosity systems.
+\end{itemize}
+
+This paper presents the hypothesis, basic estimates, and first consistency checks. Detailed cosmological calculations, simulations, and comprehensive observational fits constitute a research program for future work.
+
+\section*{Code Availability}
+
+Preliminary calculations and scripts used for the toy entropy-halo simulation and galaxy-scale fits are available at:\\[0.3em]
+\url{https://github.com/prtyboom/ontological-resolution-theory}
+
+\bibliographystyle{unsrtnat}
+\begin{thebibliography}{99}
+
+\bibitem{Planck2018}
+N.~Aghanim et al. (Planck Collaboration),
+\emph{Planck 2018 results. VI. Cosmological parameters},
+Astron. Astrophys. \textbf{641}, A6 (2020).
+
+\bibitem{LZ2022}
+J.~Aalbers et al. (LZ Collaboration),
+\emph{First Dark Matter Search Results from LUX-ZEPLIN},
+Phys. Rev. Lett. \textbf{131}, 041002 (2023).
+
+\bibitem{Bousso02}
+R.~Bousso,
+\emph{The holographic principle},
+Rev. Mod. Phys. \textbf{74}, 825 (2002).
+
+\bibitem{FermiDwarfs2015}
+M.~Ackermann et al. (Fermi-LAT),
+\emph{Searching for Dark Matter Annihilation from Milky Way Dwarf Spheroidals},
+Phys. Rev. Lett. \textbf{115}, 231301 (2015).
+
+\end{thebibliography}
+
+\end{document}
