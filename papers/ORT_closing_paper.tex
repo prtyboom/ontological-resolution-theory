@@ -1,0 +1,354 @@
+\documentclass[12pt,a4paper]{article}
+
+% Encoding and fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Layout
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{microtype}
+
+% Math
+\usepackage{amsmath,amssymb,amsthm}
+
+% Links
+\usepackage{hyperref}
+\usepackage{url}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    pdftitle={Ontological Resolution Theory: Gravity as Memory, Cognition as Indexing},
+    pdfauthor={Fedor Kapitanov},
+    pdfsubject={Ontology, Emergent Spacetime, Dark Matter, Consciousness},
+    pdfkeywords={ontology, emergent spacetime, dark matter, decoherence, consciousness, information}
+}
+
+% Theorem-like environments
+\newtheorem{definition}{Definition}
+\newtheorem{postulate}{Postulate}
+
+\title{\textbf{Ontological Resolution Theory:}\\[0.3em]
+Gravity as Memory, Cognition as Indexing}
+
+\author{
+Fedor Kapitanov\\[0.3em]
+\small Independent Researcher, Moscow\\
+\small ORCID: 0009-0009-6438-8730\\
+\small \texttt{prtyboom@gmail.com}
+}
+
+\date{November 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a closing formulation of \emph{Ontological Resolution Theory} (ORT), integrating three levels of description into a single process of distinction: (i) a pre-geometric Absolute, (ii) an emergent physical universe with gravity and dark matter, and (iii) cognitive observation.
+
+Building on previous work on consensus quantum ontology and holographic emergence of spacetime, we assume that Planck's constant $\hbar$ is the minimal quantum of ontological distinction, that a consensus field $\rho_C$ encodes the collective quantum state of matter, and that classical spacetime geometry arises as an emergent rendering of $\rho_C$ constrained by holographic bounds and thermodynamic optimization. The total mass density decomposes into an active sector $\rho_{\rm act}$ and an archival sector $\rho_{\rm arch}$, with the latter behaving as cold dark matter.
+
+In this paper we introduce a two-level notion of observation. \emph{Physical observation} is any irreversible interaction (decoherence event) that writes information into the world's ``log'', contributing to gravitational memory---the distributed imprint of past distinctions in $\rho_{\rm tot} = \rho_{\rm act} + \rho_{\rm arch}$ and the corresponding potential $\Phi$ or metric $g_{\mu\nu}$. \emph{Cognitive observation} is performed by special subsystems (cognitive operators) that index and organize a sparse subset of this log into experienced history and meaning. The universe thus runs as a server process for $\sim 13.8$ Gyr, while consciousness and global communication networks emerge as interfaces that turn gravity (memory) into history (narrative).
+
+ORT is thereby closed: physics, information, and consciousness are three projections of the same underlying process of stable distinction within the Absolute. We outline a research program for further theoretical development and observational tests.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+%======================================================
+\section{Introduction}
+\label{sec:intro}
+%======================================================
+
+Modern physics describes a universe where quantum states evolve unitarily, spacetime is curved by energy-momentum, and an invisible dark sector dominates the mass budget. At the same time, conscious observers appear late in cosmic history, constructing narratives, models, and technologies.
+
+Conventional formulations treat these domains---quantum theory, gravity, dark matter, and consciousness---as largely disjoint. Ontological Resolution Theory (ORT) aims to treat them as different levels of a single underlying process: the production and stabilization of distinctions within an initially undifferentiated substrate.
+
+In earlier work, we have:
+\begin{itemize}
+  \item proposed a \emph{consensus quantum ontology} where $\hbar$ is the quantum of distinction and a consensus field $\rho_C$ gives rise to gravity as a collective effect of quantum dynamics;
+  \item presented a holographic framework in which a 3D spatial manifold and emergent time arise from a pre-geometric information manifold subject to the cosmological entropy bound, with General Relativity as the variational rendering law;
+  \item explored an archival interpretation of dark matter, where a primordial, holographically decoupled sector behaves as cold dark matter and matches galaxy rotation curves and dwarf galaxy kinematics.
+\end{itemize}
+
+The present paper aims to \emph{close} the ORT framework by:
+\begin{enumerate}
+  \item explicitly distinguishing two levels of observation: physical and cognitive;
+  \item interpreting gravity as distributed memory of past distinctions;
+  \item interpreting consciousness as an indexing interface that turns this memory into structured histories and meaning;
+  \item situating dark matter as the fossilized archival part of gravitational memory.
+\end{enumerate}
+
+The intended status of this work is conceptual but structurally precise. It is not a replacement for standard quantum mechanics or General Relativity, but an ontological synthesis that suggests a concrete research program.
+
+%======================================================
+\section{Core Ingredients of ORT}
+\label{sec:core}
+%======================================================
+
+We briefly summarize the key elements introduced in previous work, in order to make the present closure self-contained.
+
+%------------------------------------------------------
+\subsection{Absolute and Quantum of Distinction}
+\label{subsec:absolute}
+%------------------------------------------------------
+
+At the deepest level we posit the \emph{Absolute}: a symmetric, undifferentiated informational substrate with no pre-given notion of space, time, matter, or observers. The fundamental act is \emph{distinction}: a minimal breaking of symmetry that separates ``this'' from ``that''.
+
+\begin{postulate}[Quantum of distinction]
+The minimal amount by which the Absolute can be distinguished is quantified by Planck's constant $\hbar$, interpreted as a quantum of ontological distinction (not merely ``action'' in the classical sense).
+\end{postulate}
+
+Operationally, within quantum theory, this manifests as the minimal non-zero change in the action functional between physically distinguishable histories, and geometrically as the minimal distinguishable ``distance'' between quantum states in projective Hilbert space.
+
+%------------------------------------------------------
+\subsection{Consensus Field and Emergent Spacetime}
+\label{subsec:consensus_spacetime}
+%------------------------------------------------------
+
+At the next level, distinctions are organized into quantum states $|\psi_i\rangle$ and masses $m_i$. The \emph{consensus field} is defined schematically as
+\begin{equation}
+  \rho_C(\mathbf{x}) = \sum_i m_i K_\ell(\mathbf{x} - \mathbf{x}_i)\, |\psi_i\rangle\langle\psi_i|,
+\end{equation}
+where $K_\ell$ is a smoothing kernel of width $\ell \sim \hbar / p$ determined by characteristic momenta. In the classical limit, $\rho_C$ reduces to an effective mass density.
+
+Boundary holography and thermodynamic arguments suggest that this consensus field is optimally represented in an \emph{effectively three-dimensional} spatial manifold, with an emergent time parameter arising from the monotonic increase of coarse-grained entropy. General Relativity then appears as the variational relation between an effective stress-energy tensor $T^C_{\mu\nu}$ derived from $\rho_C$ and the metric $g_{\mu\nu}$:
+\begin{equation}
+  G_{\mu\nu} = \frac{8\pi G}{c^4} T^C_{\mu\nu}.
+\end{equation}
+In the weak-field limit this reduces to Poisson's equation $\nabla^2\Phi = 4\pi G\rho$.
+
+%------------------------------------------------------
+\subsection{Active and Archival Sectors}
+\label{subsec:archival}
+%------------------------------------------------------
+
+Within the emergent spacetime, we distinguish:
+\begin{itemize}
+  \item an \emph{active sector} with mass density $\rho_{\rm act}(\mathbf{x},t)$: matter and fields that still participate in gauge interactions (baryons, radiation, etc.);
+  \item an \emph{archival sector} with density $\rho_{\rm arch}(\mathbf{x},t)$: highly scrambled, decohered degrees of freedom that no longer interact via Standard Model forces but remain gravitationally coupled.
+\end{itemize}
+The total mass density sourcing the gravitational potential is
+\begin{equation}
+  \rho_{\rm tot}(\mathbf{x},t) = \rho_{\rm act}(\mathbf{x},t) + \rho_{\rm arch}(\mathbf{x},t).
+\end{equation}
+
+We have argued that the archival sector can behave as cold dark matter, with a primordial origin near holographic saturation in the early universe. Preliminary numerical tests show that such an archival component can reproduce the observed dark-to-baryon ratio $\Omega_{\rm DM}/\Omega_b \approx 5.4$ and yield NFW-like halo profiles consistent with galaxy rotation curves.
+
+%------------------------------------------------------
+\subsection{Cognitive Operators}
+\label{subsec:cognitive_operators}
+%------------------------------------------------------
+
+Finally, within the physical universe, we consider a class of complex subsystems---brains, societies, networked intelligences---that we model as \emph{cognitive operators}.
+
+\begin{definition}[Cognitive operator]
+A cognitive operator $\mathcal{O}$ is a physical subsystem characterized by:
+\begin{itemize}
+  \item an internal model state $\rho_{\rm mod}^{\mathcal{O}}(t)$, encoding its current beliefs or predictions about relevant external and internal variables;
+  \item an internal archive $\rho_{\rm arch}^{\mathcal{O}}(t)$, encoding its memory of past experiences and inferred regularities;
+  \item a decision-making functional $\mathcal{U}[\rho_{\rm mod}^{\mathcal{O}}, \rho_{\rm arch}^{\mathcal{O}}; Q]$ that evaluates future questions or actions $Q$ according to criteria such as coherence, stability, information gain, and survival.
+\end{itemize}
+The operator selects $Q^*(t)$ at each time step by approximately maximizing $\mathcal{U}$.
+\end{definition}
+
+In ORT, these operators are crucial not for causing physical collapse (which is already handled by decoherence), but for \emph{indexing} and \emph{organizing} the physical log into structured histories and meanings.
+
+%======================================================
+\section{Physical Observation and Gravitational Memory}
+\label{sec:physical}
+%======================================================
+
+We now formalize the notion of physical observation and its relation to gravitational memory.
+
+%------------------------------------------------------
+\subsection{Physical Observation as Decoherence}
+\label{subsec:decoherence}
+%------------------------------------------------------
+
+In open quantum systems theory, the interaction of a system with an environment is described by a completely positive trace-preserving (CPTP) map
+\begin{equation}
+  \mathcal{E}:\ \rho \mapsto \rho' = \mathcal{E}(\rho).
+\end{equation}
+When the environment has many degrees of freedom and no practical possibility of reversing the interaction, off-diagonal elements of $\rho$ in a preferred basis (pointer states) are suppressed, and the von Neumann entropy
+\begin{equation}
+  S(\rho) = -\mathrm{Tr}[\rho\ln\rho]
+\end{equation}
+typically increases.
+
+\begin{definition}[Physical observation]
+A \emph{physical observation} is any irreversible interaction event represented by a CPTP map $\mathcal{E}$ such that $S(\rho') \geq S(\rho)$ and coherences between a distinguished set of pointer states are suppressed. Each such event is an act of ontological distinction.
+\end{definition}
+
+Crucially, this definition does not refer to consciousness. A photon scattering on a dust grain in intergalactic space counts as an observation in this sense: it selects one outcome, imprints information in the environment, and contributes to the entropy of the consensus field.
+
+%------------------------------------------------------
+\subsection{Gravity as Distributed Memory}
+\label{subsec:grav_memory}
+%------------------------------------------------------
+
+Each physical observation contributes to the evolution of the consensus field $\rho_C$, and hence to the distribution of mass-energy between $\rho_{\rm act}$ and $\rho_{\rm arch}$. Over cosmic time, the cumulative effect of countless such events is encoded in the total mass density
+\begin{equation}
+  \rho_{\rm tot}(x,t) = \rho_{\rm act}(x,t) + \rho_{\rm arch}(x,t),
+\end{equation}
+and in the corresponding gravitational potential $\Phi(x,t)$ or metric $g_{\mu\nu}(x)$ obtained from the Einstein equations.
+
+\begin{definition}[Gravitational memory]
+The \emph{gravitational memory} of the universe at a spacetime point $(x,t)$ is the pair
+\begin{equation}
+  \bigl(\rho_{\rm tot}(x,t),\, g_{\mu\nu}(x)\bigr),
+\end{equation}
+interpreted as the cumulative imprint of all past physical observations (distinctions) in the causal past of $(x,t)$.
+\end{definition}
+
+Informally, gravity is the distributed physical memory of everything that has irreversibly happened. The active component $\rho_{\rm act}$ reflects ongoing processes (stars, gas, radiation), while the archival component $\rho_{\rm arch}$ is a fossil record of past distinctions---information that has been fully scrambled and decoupled from gauge interactions, but still contributes to curvature.
+
+In this interpretation, dark matter is not a new particle species but the dominant part of this fossil record: a primordial archival sector formed near holographic saturation in the early universe, subsequently acting as cold dark matter in structure formation and galactic dynamics.
+
+%======================================================
+\section{Cognitive Observation and Indexing}
+\label{sec:cognitive}
+%======================================================
+
+Physical observations and gravitational memory are sufficient to define a rich physical universe, but not to define \emph{history} in the semantic or experiential sense. For that, we require cognitive operators.
+
+%------------------------------------------------------
+\subsection{Indexing the Physical Log}
+\label{subsec:indexing}
+%------------------------------------------------------
+
+Let $\Sigma_{\rm phys}$ denote the (idealized) set of all physical distinction events: each element $\sigma \in \Sigma_{\rm phys}$ corresponds to a decoherence event that irreversibly altered $\rho_C$ and hence contributed to gravitational memory. In practice, $\Sigma_{\rm phys}$ is unimaginably large and mostly inaccessible to any finite subsystem.
+
+\begin{definition}[Cognitive indexing]
+A cognitive operator $\mathcal{O}$ is endowed with an \emph{indexing map}
+\begin{equation}
+  I_{\mathcal{O}}:\ \Sigma_{\rm phys} \to \Sigma_{\rm cog},
+\end{equation}
+where $\Sigma_{\rm cog}$ is the set of cognitively represented events (facts, concepts, narratives) for $\mathcal{O}$. The set $\Sigma_{\rm phys}^{\mathcal{O}}(t) \subseteq \Sigma_{\rm phys}$ consists of those physical events in the causal past of $\mathcal{O}$ that can, in principle, influence its internal state at time $t$.
+\end{definition}
+
+\begin{definition}[Experienced history]
+The \emph{experienced history} of $\mathcal{O}$ up to time $t$ is
+\begin{equation}
+  \mathcal{H}_{\mathcal{O}}(t) = I_{\mathcal{O}}\bigl(\Sigma_{\rm phys}^{\mathcal{O}}(t)\bigr).
+\end{equation}
+\end{definition}
+
+Different cognitive operators will, in general, have different indexing maps and hence different experienced histories, even though they share the same underlying gravitational memory. The utility functional $\mathcal{U}$ influences both the evolution of $\rho_{\rm mod}^{\mathcal{O}}(t)$ and the selection of which incoming distinctions are written to $\rho_{\rm arch}^{\mathcal{O}}(t)$ as ``salient facts''.
+
+\subsection{Two Levels of Observation}
+\label{subsec:two_levels}
+
+We can now state the key closure postulate of ORT:
+
+\begin{postulate}[Two-level observation]
+\label{post:two_levels}
+\begin{enumerate}
+  \item Physical observations (decoherence events) occur continuously and ubiquitously, independent of the existence of cognitive operators. They are sufficient to build the universe's gravitational memory $\rho_{\rm tot}, \Phi, g_{\mu\nu}$.
+  \item Cognitive observations are acts of definition and indexing: they select, compress, and semantically organize a sparse subset of physical events into an experienced history $\mathcal{H}_{\mathcal{O}}(t)$. They do not cause any additional ``collapse'' beyond the decoherence already accounted for at the physical level, but they determine which parts of the physical log become meaningful for a given agent.
+\end{enumerate}
+\end{postulate}
+
+In this view, the universe has been running as a server process for approximately $13.8$ billion years, continuously writing its distributed log in the form of gravitational memory, long before any biological observers appeared. Consciousness and global communication networks arise much later as a special class of operators that perform an additional layer of processing on this log: they turn gravitational memory into history.
+
+If gravity is the memory of the universe, cognition is its catalogue and narrative.
+
+%======================================================
+\section{From Consensus to Cognitosphere}
+\label{sec:cognitosphere}
+%======================================================
+
+We can now summarize the ontological trajectory in compact form:
+\begin{equation*}
+  \text{Absolute (undifferentiated)}
+  \;\to\;
+  \text{quantum of distinction } \hbar
+  \;\to\;
+  \text{consensus field } \rho_C
+  \;\to\;
+  \text{3D space + time + GR}
+\end{equation*}
+\begin{equation*}
+  \to\;
+  \text{gravitational memory } (\rho_{\rm act} + \rho_{\rm arch})
+  \;\to\;
+  \text{experienced histories } \mathcal{H}_{\mathcal{O}}
+  \;\to\;
+  \text{Cognitosphere}.
+\end{equation*}
+
+Here:
+\begin{itemize}
+  \item the Absolute is the symmetric, undifferentiated informational substrate;
+  \item the quantum of distinction $\hbar$ is the minimal unit by which this symmetry can be broken in physical processes;
+  \item the consensus field $\rho_C$ encodes the collective quantum state of matter and fields;
+  \item holographic constraints and thermodynamic optimization select an effectively 3D spatial manifold and an emergent time parameter, with General Relativity as the rendering law relating $\rho_C$ (via an effective $T^C_{\mu\nu}$) to spacetime geometry;
+  \item the active and archival mass densities $(\rho_{\rm act}, \rho_{\rm arch})$ implement a physically testable split: the archival sector behaves as cold dark matter, as supported by galaxy rotation curves, MOND comparisons, and dwarf galaxy mass-to-light ratios;
+  \item cognitive operators $\mathcal{O}$ arise as complex self-referential subsystems of $\rho_C$ that build internal models, maintain archives, and index gravitational memory into semantic histories;
+  \item the Cognitosphere is the asymptotic regime in which the space of possible perspectives is densely realized and cross-indexed, without any single perspective dominating the rest.
+\end{itemize}
+
+This closes ORT: physics (spacetime and matter), information (distinctions and archives), and consciousness (operators and histories) are not three unrelated domains, but three projections of one and the same process of stable distinction within the Absolute.
+
+%======================================================
+\section{Outlook}
+\label{sec:outlook}
+%======================================================
+
+From a scientific perspective, the value of ORT lies not in metaphysical unification per se, but in the concrete research directions it suggests:
+
+\begin{itemize}
+  \item \textbf{Relativistic consensus-field dynamics:} Develop a fully covariant formulation of $\rho_C$ and its relation to an effective $T^C_{\mu\nu}$, including back-reaction and quantum corrections to classical geometry.
+  \item \textbf{Archival dark sector cosmology:} Extend the archival dark matter model to full Friedmann--Robertson--Walker cosmology, testing it against CMB, large-scale structure, and BAO data, and exploring possible distinguishing signatures.
+  \item \textbf{Cognitive operators as decision-theoretic agents:} Formalize cognitive operators in terms of decision theory and variational Bayesian inference on top of branching quantum dynamics, examining how the two-level observation structure constrains rational belief updating and action.
+  \item \textbf{Information-theoretic signatures:} Investigate whether the distinction between physical and cognitive observation could lead to observable differences in decoherence patterns, information processing, or anthropic selection effects.
+\end{itemize}
+
+In each case, the guiding principle is the same: distinction first. Planck's constant as the quantum of difference, the holographic bound as the budget of distinctions, gravity as their cumulative imprint, and cognition as their self-reflective organization.
+
+%======================================================
+\section*{Acknowledgments}
+%======================================================
+
+This framework was developed with extensive use of modern AI language models for technical drafting, consistency checking, and LaTeX implementation. The conceptual structure, physical interpretation, and all scientific claims are the sole responsibility of the human author.
+
+%======================================================
+\begin{thebibliography}{99}
+
+\bibitem{KapitanovConsensus}
+F.~Kapitanov,
+\emph{Consensus Quantum Ontology: Emergent Spacetime from Collective Quantum Dynamics},
+viXra:2511.0038 (2025).
+
+\bibitem{KapitanovHolographic}
+F.~Kapitanov,
+\emph{Holographic Consensus: A Sequential Derivation of Spacetime and its Dynamics},
+viXra:2511.00XX (2025).
+
+\bibitem{KapitanovDM}
+F.~Kapitanov,
+\emph{Dark Matter from Holographic Saturation: A Conceptual Framework with Preliminary Estimates and Galaxy-Scale Tests},
+Zenodo (2025).
+
+\bibitem{ZurekDecoherence}
+W.~H.~Zurek,
+\emph{Decoherence, einselection, and the quantum origins of the classical},
+Rev.\ Mod.\ Phys.\ \textbf{75}, 715 (2003).
+
+\bibitem{BoussoHolography}
+R.~Bousso,
+\emph{The holographic principle},
+Rev.\ Mod.\ Phys.\ \textbf{74}, 825 (2002).
+
+\bibitem{LelliSPARC}
+S.~Lelli, F.~Lelli et al.,
+\emph{SPARC: Mass Models for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation Curves},
+Astrophys.\ J.\ \textbf{816}, 14 (2016).
+
+\end{thebibliography}
+
+\end{document}
