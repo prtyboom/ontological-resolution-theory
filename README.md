@@ -238,7 +238,15 @@ Zenodo: https://zenodo.org/records/17741356
 
 DOI: 10.5281/zenodo.17741356
 
+### Ontological Density Field I(x) — v2.3 (Latest)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17845639.svg)](https://doi.org/10.5281/zenodo.17845639)
 
+A fully covariant theory of spacetime information content with applications to:
+- Hubble tension resolution (H0 = 73.9 ± 1.5 km/s/Mpc)
+- Dark matter as ghost information
+- CMB constraints
+
+**All versions**: [10.5281/zenodo.17842914](https://doi.org/10.5281/zenodo.17842914)
 
 Status
 
