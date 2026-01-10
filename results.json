@@ -1,0 +1,30 @@
+﻿{
+  "ort": {
+    "Z": 137.0360457363941,
+    "alpha_inv_ort": 137.03599928335535,
+    "mt_ort_GeV": 172.72776336936414,
+    "v_exp_from_GF_GeV": 246.21965079413738,
+    "v_ort_from_mt_GeV": 245.97029239945968
+  },
+  "reference": {
+    "alpha_inv": 137.035999084,
+    "me_MeV": 0.51099895,
+    "mt_GeV": 172.76,
+    "mt_GeV_sigma": 0.3,
+    "GF_GeVminus2": 1.1663787e-05
+  },
+  "notes": {
+    "alpha_inv": "CODATA 2018 (as used in ORT Canon)",
+    "me_MeV": "CODATA electron mass energy equivalent",
+    "mt_GeV": "PDG representative value (scheme dependent; often MC mass)",
+    "GF_GeVminus2": "PDG Fermi constant"
+  },
+  "residuals": {
+    "alpha_inv_abs": 1.9935535533477378e-07,
+    "alpha_inv_rel": 1.4547663144526965e-09,
+    "mt_abs": -0.03223663063585036,
+    "mt_rel": -0.00018659776936704307,
+    "v_abs": -0.24935839467769938,
+    "v_rel": -0.0010127477391566374
+  }
+}
