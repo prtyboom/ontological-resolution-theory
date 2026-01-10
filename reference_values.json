@@ -1,1 +1,24 @@
-{"source_notes":{"alpha_inv":"CODATA 2018 (as used in ORT Canon)","me_MeV":"CODATA electron mass energy equivalent","mt_GeV":"PDG representative value (scheme dependent; often MC mass)","GF_GeVminus2":"PDG Fermi constant"},"values":{"alpha_inv":137.035999084,"me_MeV":0.51099895,"mt_GeV":172.76,"mt_GeV_sigma":0.30,"GF_GeVminus2":1.1663787e-5}}
+{
+  "source_notes": {
+    "alpha_inv": "CODATA 2018 (as used in ORT Canon)",
+    "me_MeV": "CODATA electron mass energy equivalent",
+    "m_p_MeV": "PDG proton mass (energy equivalent)",
+    "m_mu_MeV": "PDG muon mass",
+    "m_tau_MeV": "PDG tau mass",
+    "mt_GeV": "PDG representative top mass (scheme dependent; often MC mass)",
+    "GF_GeVminus2": "PDG Fermi constant"
+  },
+  "values": {
+    "alpha_inv": 137.035999084,
+    "me_MeV": 0.51099895,
+
+    "m_p_MeV": 938.27208816,
+    "m_mu_MeV": 105.6583755,
+    "m_tau_MeV": 1776.86,
+
+    "mt_GeV": 172.76,
+    "mt_GeV_sigma": 0.30,
+
+    "GF_GeVminus2": 1.1663787e-5
+  }
+}
