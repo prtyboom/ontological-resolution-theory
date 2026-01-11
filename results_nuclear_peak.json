@@ -1,0 +1,25 @@
+{
+  "ort_prediction": {
+    "Eb_per_A_peak_MeV": 8.829428010216537,
+    "formula": "(k3D-1)*(pi/2)*m_e",
+    "k3D": 12,
+    "m_e_MeV": 0.51099895
+  },
+  "dataset": {
+    "path": "C:\\Users\\admin\\Documents\\ontological-resolution-theory\\data\\nubase_stable.csv",
+    "row_count": 3,
+    "stable_count": 3,
+    "note": "Template dataset; replace with pinned AME/NUBASE stable nuclides list."
+  },
+  "best_stable_nuclide_in_dataset": {
+    "Z": 28,
+    "A": 62,
+    "symbol": "Ni",
+    "nuclide": "62Ni",
+    "Eb_per_A_MeV": 8.794556507733725
+  },
+  "residuals": {
+    "abs_MeV": -0.03487150248281168,
+    "rel": -0.003949463367554709
+  }
+}

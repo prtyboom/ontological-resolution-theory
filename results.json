@@ -8,7 +8,7 @@
     "mt_ort_GeV": 172.72776336936414,
     "v_exp_from_GF_GeV": 246.21965079413738,
     "v_ort_from_mt_GeV": 245.97029239945968,
-    "Delta_step_MeV": 0.9832823165957856
+    "EbA_peak_ort_MeV": 8.829428010216537
   },
   "reference_values": {
     "alpha_inv": 137.035999084,
@@ -18,7 +18,10 @@
     "m_tau_MeV": 1776.86,
     "mt_GeV": 172.76,
     "mt_GeV_sigma": 0.3,
-    "GF_GeVminus2": 1.1663787e-05
+    "GF_GeVminus2": 1.1663787e-05,
+    "Ebind_peak_MeV_perA": 8.794556507733725,
+    "Ebind_peak_nuclide": "62Ni",
+    "Ebind_peak_source": "data/nubase_stable.csv (template; replace with pinned AME/NUBASE stable list)"
   },
   "source_notes": {
     "alpha_inv": "CODATA 2018 (as used in ORT Canon)",
@@ -27,25 +30,25 @@
     "m_mu_MeV": "PDG muon mass",
     "m_tau_MeV": "PDG tau mass",
     "mt_GeV": "PDG representative top mass (scheme dependent; often MC mass)",
-    "GF_GeVminus2": "PDG Fermi constant"
+    "mt_GeV_sigma": "Representative uncertainty for scale-level comparison; scheme-dependent",
+    "GF_GeVminus2": "PDG Fermi constant",
+    "Ebind_peak_MeV_perA": "Pinned reference peak Eb/A (currently from our template dataset; replace with pinned AME/NUBASE full stable list)",
+    "Ebind_peak_source": "Provenance of pinned Eb/A peak reference"
   },
   "reference_derived": {
     "mp_me_ref": 1836.1526734252586,
     "mmu_me_ref": 206.76828298766566,
     "mtau_me_ref": 3477.228280018971
   },
-  "residuals": {
-    "alpha_inv_abs": 1.9935535533477378e-07,
-    "alpha_inv_rel": 1.4547663144526965e-09,
-    "mp_me_abs": 0.0001575086519096658,
-    "mp_me_rel": 8.578189286179598e-08,
-    "mmu_me_abs": -0.0023805007663781907,
-    "mmu_me_rel": -1.1512891300259019e-05,
-    "mtau_me_abs": 0.011412443876906764,
-    "mtau_me_rel": 3.282051955715861e-06,
-    "mt_abs": -0.03223663063585036,
-    "mt_rel": -0.00018659776936704307,
-    "v_abs": -0.24935839467769938,
-    "v_rel": -0.0010127477391566374
+  "nuclear_diagnostic": {
+    "dataset_path": "C:\\Users\\admin\\Documents\\ontological-resolution-theory\\data\\nubase_stable.csv",
+    "dataset_best_nuclide": "62Ni",
+    "dataset_best_Eb_per_A_MeV": 8.794556507733725,
+    "pinned_ref_nuclide": "62Ni",
+    "pinned_ref_Eb_per_A_MeV": 8.794556507733725
+  },
+  "sigma_residuals": {
+    "mt_sigma": 0.3,
+    "mt_sigma_residual": -0.10745543545283454
   }
 }
