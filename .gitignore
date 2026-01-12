@@ -1,26 +1,48 @@
-# Python venv
-.venv/
-
-# Python cache
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# LaTeX build artifacts
+# LaTeX
 *.aux
 *.log
 *.out
-*.toc
 *.synctex.gz
-*.fls
 *.fdb_latexmk
+*.fls
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
 
-# Figures (если не хочешь хранить картинки в git; если хочешь — закомментируй)
-figures/
+# IDE
+.vscode/
+.idea/
 
-# Temporary / binary
-*.p
-*.pkl
+# Temporary
+*.tmp
+*.bak
+*~
+
+# Keep directory structure
+!results/.gitkeep
+!docs/.gitkeep
+!scripts/.gitkeep
