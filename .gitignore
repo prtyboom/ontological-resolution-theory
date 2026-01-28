@@ -46,3 +46,18 @@ desktop.ini
 !results/.gitkeep
 !docs/.gitkeep
 !scripts/.gitkeep
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtualenv
+.venv/
+
+# Local/generated data & results (project-specific)
+data/mast/
+results/
+results*.csv
+results*.json
+results*.md
+tmp_*.py
