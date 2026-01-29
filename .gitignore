@@ -61,3 +61,20 @@ results*.csv
 results*.json
 results*.md
 tmp_*.py
+# NIRSpec temporary scripts (not part of ORT canon)
+scripts/check_s2d_target.py
+scripts/filter_g235m.py
+scripts/find_by_name.py
+scripts/find_target_obs.py
+scripts/fit_ciii_extver.py
+scripts/fit_ciii_extver_grid.py
+scripts/get_products_obsid.py
+scripts/get_s2d_obsid.py
+scripts/grep_s2d_header.py
+scripts/inspect_s2d.py
+scripts/inspect_x1d.py
+scripts/list_s2d_sources.py
+scripts/mast_get_nirspec.py
+scripts/mast_get_nirspec_paged.py
+scripts/match_s2d_sources.py
+scripts/scan_ciii_x1d.py
